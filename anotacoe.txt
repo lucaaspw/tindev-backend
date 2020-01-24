@@ -1,0 +1,45 @@
+no nosso metodo nossa rota raiz que é o get a gente recebe o req = requisição e res = resposta.
+
+req vai trazer toda requisição referente ao usuario.
+res é o objeto para retornar uma resposta pro cliente.
+
+para rodar o servidor user este comando " node src/server.js " no seu terminal.
+
+query = retorna todos os parametros passado na url
+
+o express não vem com o entendimento de json, voce tem que falar pra ele o que deve fazer.
+
+voce tem que especificar dentro da pasta server.js
+"server.use(express.json());"
+
+add a dep express
+add o nodemon para melhorar a compilação do servidor.
+add o mongoose é um dbm uma ferramenta que facilita o trabalho com banco de dados usando javascript
+url do mongodb{
+mongodb+srv://Lucaspw:<password>@cluster0-w0e98.mongodb.net/test?retryWrites=true&w=majority
+}
+
+Axios = usamos o axios para acessar as APIs externas.
+o axios quando faz uma requisição, ele retorna os dados em 'data'.
+o axios demora para fazer uma requisição e para resolver este problema devemos dizer que a função é assincrona,
+usando o "async" e "await"
+
+findOne() é uma operação do mongoose para encontrar um usuario.
+o store() é um metodo de criação, tipo o create().
+
+no arquivo dev.js a gente add a possibilidade do usuario dar likes e deslikes em um user
+os parametros usados foram
+type:Schema.Types.ObjectId,
+        ref: 'dev',
+    para pegarmos o id de cada user.
+
+params serve para acessar um parametro através da rota.
+
+add o cors que é uma função que ajudará o frontend buscar a informação.
+então a aplicação do react e react native estaram prontos dps dessa função ser importada.
+
+add o socket.io para facilitar o acesso nas api's
+
+
+
+
